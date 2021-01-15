@@ -1,0 +1,13 @@
+{
+    "name": "weather-heather",
+    "version": "0.1.0",
+    "author": "christophhalbi",
+    "description": "weather-heather",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron ."
+    },
+    "devDependencies": {
+        "electron": "^11.1.1"
+    }
+}
