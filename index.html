@@ -4,11 +4,25 @@
     <meta charset="UTF-8">
     <title>weather-heather</title>
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link href="./style/styles.css" rel="stylesheet"/>
 </head>
 <body>
-    <div>
-        <div id="temperature"/>temperature goes here</div>
+    <div id="main">
+        <div id="overview">
+            <div id="apiStatus"/>
+            <div id="temperature">temperature goes here</div>
+            <div id="temperatureMin">temperature min goes here</div>
+            <div id="temperatureMax">temperature max goes here</div>
+            <div id="weather">weather goes here</div>
+        </div>
+        <div id="settingsForm">
+            <div class="label">
+                <span>API-KEY</span>
+                <input type="text" id="apiKey"/>
+            </div>
+            <button id="saveSettings">Speichern</div>
+        </div>
     </div>
     <script src="app.js"></script>
 </body>
-</html> 
+</html>

@@ -6,7 +6,9 @@ function createWindow () {
         height: 600,
         //frame: false,
         webPreferences: {
-            nodeIntegration: true
+            nodeIntegration: true,
+            nodeIntegrationInWorker: true,
+            enableRemoteModule: true
         }
     });
 
@@ -27,4 +29,4 @@ app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) {
         createWindow()
     }
-}) 
+})
